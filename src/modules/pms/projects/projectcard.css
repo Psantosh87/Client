@@ -1,0 +1,164 @@
+/* Center website */
+.main_pms {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card_title {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row_pms {
+  margin-top: 23px;
+}
+
+/* Add padding BETWEEN each column */
+.row_pms,
+.row_pms>.column_pms {
+  padding-bottom: 30px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column_pms {
+  float: left;
+  width: 33.33%;
+  /* margin-right: 10px; */
+  /* border: 1px solid red; */
+}
+
+/* Clear floats after rows */
+.row_pms:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content_pms {
+  background-color: white;
+  /* padding: 15px; */
+  position: relative;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 31, 31, 0.2);
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 300pt;
+  height: 470px;
+  
+}
+
+.content_pms_add {
+  background-color: white;
+  padding: 15px;
+  width: 300pt;
+  height: 470px;
+  background: #F5F5F5;
+  border: 1px dashed #696969;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.card_content {
+  padding: 20px 0 20px 15px;
+}
+
+.card_date {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #696969;
+}
+
+.card_author {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #696969;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.card_title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1F1F1F;
+  padding-top: 2px;
+  padding-bottom: 4px;
+}
+
+.card_image{
+  height:13.94px;
+  width:12.15px;
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+
+
+
+.remark {
+  display: flex;
+  flex-direction: row;
+  margin-top: 14px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1F1F1F;
+}
+
+.remark_item{
+  padding-right: 10px;
+}
+
+.card_cross_image{
+  width:17px;
+  height:17px;
+  display: flex;
+  margin: 9px auto;
+}
+
+.card_cross{
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  z-index: 2;
+  right: 15px;
+  top:20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+
+.checkbox_input{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  z-index: 2;
+  left: 15px;
+  top:20px;
+  background-color: #ffffff;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1570px) {
+  .column_pms {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column_pms {
+    width: 100%;
+  }
+}
